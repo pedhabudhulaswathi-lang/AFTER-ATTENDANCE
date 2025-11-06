@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Games</title>
+<style>
+  body {
+    background: #c8e6c9;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    padding: 30px;
+  }
+  button {
+    margin-top: 20px;
+    background: #43a047;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 10px;
+  }
+</style>
+</head>
+<body>
+  <h1>🎮 Mini Games 🎮</h1>
+  <p>Start small, have big fun!</p>
+  <button onclick="play()">Click Me!</button>
+  <p id="result"></p>
+  <script>
+    function play() {
+      const msgs = ["You win 🥳", "Try again 😅", "Lucky next time 🍀"];
+      document.getElementById('result').innerText = msgs[Math.floor(Math.random()*msgs.length)];
+    }
+  </script>
+  <a href="index.html">⬅ Back Home</a>
+</body>
+</html>
